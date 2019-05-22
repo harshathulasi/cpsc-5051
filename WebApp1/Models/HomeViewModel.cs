@@ -9,6 +9,6 @@ namespace WebApp1.Models
     {
         public int PhoneCount;
         public int UserCount;
-        public DateTime LastAccesDate;
+        public DateTime LastAccessDate;
     }
 }

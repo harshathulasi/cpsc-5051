@@ -10,6 +10,14 @@ namespace WebApp1.Controllers
     {
         public ActionResult Index()
         {
+
+            var myData = new HomeViewModel
+            {
+                PhoneCount = 10,
+                UserCount = 15,
+                LastAcessDate = DateTime.Now
+            };
+
             return View();
         }
 
@@ -33,5 +41,12 @@ namespace WebApp1.Controllers
 
             return View();
         }
+    }
+
+    internal class HomeViewModel
+    {
+        public int PhoneCount;
+        public int UserCount;
+        public DateTime LastAcessDate;
     }
 }

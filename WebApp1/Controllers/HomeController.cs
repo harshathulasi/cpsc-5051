@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApp1.Models;
 
 namespace WebApp1.Controllers
 {
@@ -10,7 +11,6 @@ namespace WebApp1.Controllers
     {
         public ActionResult Index()
         {
-
             var myData = new HomeViewModel
             {
                 PhoneCount = 10,
@@ -43,10 +43,5 @@ namespace WebApp1.Controllers
         }
     }
 
-    internal class HomeViewModel
-    {
-        public int PhoneCount;
-        public int UserCount;
-        public DateTime LastAcessDate;
-    }
+
 }

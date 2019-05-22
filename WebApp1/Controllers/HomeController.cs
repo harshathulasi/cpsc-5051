@@ -15,7 +15,7 @@ namespace WebApp1.Controllers
             {
                 PhoneCount = 10,
                 UserCount = 15,
-                LastAccessDate = DateTime.Now
+                LastAcessDate = DateTime.Now
             };
 
             return View(myData);
